@@ -1,0 +1,379 @@
+﻿ <style>
+
+    
+
+     #slideshow {
+         overflow: hidden;
+         height: 130px;
+         width: 720px;
+         margin: 0 auto;
+         position : relative;
+        right: 100px;
+        
+     }
+
+     .slide-wrapper {
+         width: 2912px;
+         -webkit-animation: slide 18s ease infinite;
+     }
+
+     .slide {
+         float: left;
+         height: 510px;
+         width: 728px;
+     }
+
+         .slide:nth-child(1) {
+             background: grey;
+             opacity: 0.8;
+         }
+
+         .slide:nth-child(2) {
+             background: grey;
+             opacity: 0.8;
+         }
+
+         .slide:nth-child(3) {
+             background: grey;
+             opacity: 0.8;
+         }
+
+      
+
+     .slide-number {
+         color: #000;
+         text-align: center;
+         font-size: 40px;
+     }
+
+     @-webkit-keyframes slide {
+         20% {
+             margin-left: 0px;
+         }
+
+         30% {
+             margin-left: -728px;
+         }
+
+         50% {
+             margin-left: -728px;
+         }
+
+         60% {
+             margin-left: -1456px;
+         }
+
+         70% {
+             margin-left: -1456px;
+         }
+
+         80% {
+             margin-left: -2184px;
+         }
+
+         90% {
+             margin-left: -2184px;
+         }
+     }
+
+     body {
+         margin: 0;
+         padding: 0;
+         background-color: black;
+         background-attachment: fixed;
+         height: 100%;
+         margin: 0;
+         padding: 0;
+
+     }
+
+
+
+     #part1 {
+         background: url("img/mars1.jpg") center 0 no-repeat fixed;
+         font-size: 25px;
+     }
+
+     #part2 {
+         background: url("img/rover.jpg") center 0 no-repeat fixed;
+         font-size: 25px;
+     }
+
+     #part3 {
+         background: url("img/mars.jpg") center 0 no-repeat fixed;
+         font-size: 25px;
+     }
+      #part3 .inside p {
+             color: #170b27;
+             background-color: #fdfbfb77;
+             padding: 15px 15px;
+             border-radius: 10px;
+             text-align : center;
+             position : center
+      }
+
+       #part1 .inside p {
+             color: white;
+             background-color: black;
+             padding: 15px 15px;
+             border-radius: 10px;
+             opacity : 0.7;
+         
+
+        }
+     #part2 .inside p {
+         color: #170b27;
+        
+         background-color: #fdfbfb77;
+         padding: 15px 15px;
+         border-radius: 10px;
+     }
+     .inside {
+         margin: 0px auto;
+         text-align: justify;
+         width: 500px;
+         padding: 50px 0px;
+         height: 1000px;
+         position: center;
+         
+     }
+     footer {
+         background:black;
+         position: relative;
+         bottom: 0;
+         width: 100%;
+         padding-top: 50px;
+         height: 50px;
+         text-align : center;
+         
+     }
+    h1 {
+        color: white;
+        font-family: 'OCR A';
+        text-align: center;
+    }
+     .footer {
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         height: 50px;
+         margin-top: 50px;
+     }
+     .footer li {
+         display: inline-block;
+        
+      
+     } 
+     
+           
+
+     .footer a{
+         color : white;
+         text-align : center;
+         padding : 20px;
+         font-family : 'OCR A';
+         opacity : 0.5;
+         font-size : 20px;
+         text-decoration : none;
+         margin-bottom : 5px;
+
+     }
+    .menu li {
+        display: inline-block;
+    }
+
+    .menu a {
+        display: block;
+        width: 150px;
+        opacity: 0.5;
+        padding: 5px 30px; /* Ajout de marges internes */
+        text-align: center; /* Centrage du texte à l'intérieur des boutons */
+        border: 3px solid white; /* Ajout d'une bordure de couleur aux boutons */
+        background-color: black; /* Ajout d'une couleur d'arrière-plan */
+        color: white; /* Modification de la couleur du texte */
+        text-decoration: none; /* Suppression du soulignement des liens */
+        margin: 10px; /* Espacements des boutons */
+        border-radius: 5px; /* Ajout d'arrondis pour les boutons */
+        font-family:'OCR A';
+    }
+
+     a:hover,
+     a:focus {
+         background-color: #6d1500;
+         color: #ed2794;
+         border-color: #9f2407;
+         color: white;
+         transition: all 1s ease-out;
+     }
+
+    .menu {
+        background-color: black;
+        text-align: center;
+    }
+
+    .ml3 {
+        font-size: 3.5em;
+        color: white;
+        font-family: 'OCR A';
+        text-align: center;
+        opacity: 0.5;
+    }
+ 
+
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title> Welcome to Mars</title>
+
+   
+</head>
+
+
+<body>
+
+
+
+
+    <h1 class="ml3"> Mars Project </h1>
+
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="accueil.html">Accueil</a>
+            </li>
+            <li>
+                <a href="profil.html">Mon profil</a>
+            </li>
+            <li>
+                <a href="journal.html">Journal de bord</a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+        targets: '.ml3 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 2250,
+        delay: (el, i) => 150 * (i+1)
+        }).add({
+        targets: '.ml3',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000000000
+        });
+
+
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+
+
+    <div id="part1">
+        <div class="inside">
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                    <div class="slide"><h1 class="slide-number"> Mars project 12.6</h1></div>
+                    <div class="slide"><h1 class="slide-number">Enregistre tes missions quotidiennes</h1></div>
+                    <div class="slide"><h1 class="slide-number">Consulte ton profil</h1></div>
+
+                </div>
+            </div>
+            <p>
+               Bienvenue sur votre espace Mars Project. En tant que membre de notre équipe d'exploration marsienne, votre identité et vos faits
+                doivent être enregistré au jour le jour. Grâce à l'interface de norte site vous pourrez décrire les missions accomplies, ainsi que leur date. 
+                En tant que pionnier sur Mars, vous devez contribuer à la vie de votre équipe, effectuez autant que possible des expéditions avec le rover 
+                qui vous a été confié, faites pousser des légumes en entretenant la serre quotidiennement et bien sûr n'oubliez pas de véirifier le matériel et le réparer 
+                si nécessaire. Bon courage dans votre aventure et survivez autant que vous le pourrez.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div id="part2">
+        <div class="inside">
+            <p>
+                Mars (prononcé en français : /maʁs/) est la quatrième planète par ordre de distance croissante au Soleil et la deuxième par masse et par taille croissantes. Son éloignement au Soleil est compris entre 1,381 et 1,666 UA (206,6 à 249,2 millions de kilomètres), avec une période orbitale de 669,58 jours martiens (686,71 jours terrestres).
+
+                C’est une planète tellurique, comme le sont Mercure, Vénus et la Terre, environ dix fois moins massive que la Terre mais dix fois plus massive que la Lune. Sa topographie présente des analogies aussi bien avec la Lune, à travers ses cratères et ses bassins d'impact, qu'avec la Terre, avec des formations d'origine tectonique et climatique telles que des volcans, des rifts, des vallées, des mesas, des champs de dunes et des calottes polaires. Le plus haut volcan du Système solaire, Olympus Mons (qui est un volcan bouclier), et le plus grand canyon, Valles Marineris, se trouvent sur Mars.
+
+                Mars a aujourd'hui perdu la presque totalité de son activité géologique interne, et seuls des événements mineurs surviendraient encore épisodiquement à sa surface, tels que des glissements de terrain, sans doute des geysers de CO2 dans les régions polaires, peut-être des séismes, voire de rares éruptions volcaniques sous forme de petites coulées de lave3.
+            </p>
+
+        </div>
+    </div>
+    
+
+    <div id="part3">
+        <div class="inside">
+            <p>
+                Proin vestibulum velit venenatis congue tincidunt. Proin dapibus condimentum hendrerit. Vivamus rhoncus vestibulum
+                sodales. Donec odio eros, ultricies sed tortor non, faucibus cursus dolor. Duis ac cursus urna, id varius dui. Nulla et
+                facilisis orci. Suspendisse consectetur est id facilisis feugiat. Cras finibus magna in neque pretium hendrerit ac quis
+                elit. Cras lacinia purus ut lorem dignissim tincidunt. Ut non arcu quis nulla consequat lobortis. Fusce egestas quis
+                tortor et scelerisque. Integer fermentum lectus eu sodales consectetur. Phasellus sit amet nisl non lorem pellentesque
+                pretium ut eu enim. Integer vestibulum urna magna, ac consequat dui pretium ac. Nam nulla nulla, rhoncus a mollis a,
+                condimentum vel lectus.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+
+        <nav class="footer">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="about.html">Qui sommes-nous ?</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+
+
+</html>

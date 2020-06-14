@@ -1,0 +1,436 @@
+﻿<style>
+    .categorie {
+        background-color: black;
+        text-align: center;
+    }
+        .categorie li {
+            display: inline-block;
+        }
+
+        .categorie a {
+            display: block;
+            width: 150px;
+            opacity: 0.5;
+            padding: 5px 15px; 
+            text-align: center; 
+            border: 2px solid white;
+            background-color: lightgrey; 
+            color: black; 
+            text-decoration: none;
+            margin: 5px; 
+            border-radius: 100px; 
+            font-family: 'OCR A';
+            font-size: 12px;
+        }
+    .container {
+        overflow: hidden;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 20%;
+        border-radius: 10px;
+        width: 280px;
+        height: 280px;
+        -moz-box-shadow: 0px 0px 10px #343434;
+        -webkit-box-shadow: 0px 0px 10px #343434;
+        -o-box-shadow: 0px 0px 10px #343434;
+        box-shadow: 0px 0px 3px #343434;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    #progressbar {
+        background-color: grey;
+        border-radius: 13px;
+    
+        padding: 3px;
+    }
+
+        #progressbar > div {
+            background-color: #6d1500;
+            width: 40%;
+     
+            height: 20px;
+            border-radius: 10px;
+        }
+
+    #progressbar2 {
+        background-color: grey;
+        border-radius: 13px;
+    
+        padding: 3px;
+    }
+
+        #progressbar2 > div {
+            background-color: #6d1500;
+            width: 60%;
+        
+            height: 20px;
+            border-radius: 10px;
+        }
+
+
+    #progressbar3 {
+        background-color: grey;
+        border-radius: 13px;
+ 
+        padding: 3px;
+    }
+
+        #progressbar3 > div {
+            background-color: #6d1500;
+            width: 80%;
+          
+            height: 20px;
+            border-radius: 10px;
+        }
+
+    #progressbar4 {
+        background-color: grey;
+        border-radius: 13px;
+      
+        padding: 3px;
+    }
+
+        #progressbar4 > div {
+            background-color: #6d1500;
+            width: 50%;
+  
+            height: 20px;
+            border-radius: 10px;
+        }
+
+
+    .id {
+        background-color: lightgrey;
+        padding: 20px;
+        opacity: 0.9;
+        box-shadow: 0px 0px 10px #343434;
+    }
+   
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-attachment: fixed;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    #container {
+        margin: 20px;
+        width: 200px;
+        height: 100px;
+    }
+
+
+    #part1 {
+        background: url("img/mars1.jpg") center 0 no-repeat fixed;
+        font-size: 25px;
+    }
+
+    #part2 {
+        background: url("img/rover.jpg") center 0 no-repeat fixed;
+        font-size: 25px;
+    }
+
+    #part3 {
+        background: url("img/mars.jpg") center 0 no-repeat fixed;
+        font-size: 25px;
+        font-family : 'OCR A';
+    }
+
+        #part3 .inside p {
+            color: #170b27;
+            background-color: #fdfbfb77;
+            padding: 15px 15px;
+            border-radius: 10px;
+            text-align: center;
+            position: center
+  
+        }
+
+    #part2 .inside p {
+        color: #170b27;
+        background-color: #fdfbfb77;
+        padding: 15px 15px;
+        border-radius: 10px;
+        text-align: justify;
+        position: center
+    }
+
+    #part1 .inside p {
+        color: #170b27;
+        background-color: #fdfbfb77;
+        padding: 15px 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-family: Verdana;
+        font-size: 15px;
+        box-shadow: 5px 5px 0.5px 0.5px grey;
+        opacity : 1;
+    }
+    
+
+
+
+    .inside {
+        margin: 0px auto;
+        text-align: justify;
+        width: 500px;
+        padding: 50px 0px;
+        height: 1000px;
+        position: center;
+       
+
+    }
+
+    footer {
+        background: black;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding-top: 50px;
+        height: 50px;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: 'OCR A';
+        text-align: center;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        margin-top: 50px;
+    }
+
+        .footer li {
+            display: inline-block;
+        }
+
+
+
+        .footer a {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: 'OCR A';
+            opacity: 0.5;
+            font-size: 20px;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+    .menu li {
+        display: inline-block;
+    }
+
+    .menu a {
+        display: block;
+        width: 150px;
+        opacity: 0.5;
+        padding: 5px 30px; /* Ajout de marges internes */
+        text-align: center; /* Centrage du texte à l'intérieur des boutons */
+        border: 3px solid white; /* Ajout d'une bordure de couleur aux boutons */
+        background-color: black; /* Ajout d'une couleur d'arrière-plan */
+        color: white; /* Modification de la couleur du texte */
+        text-decoration: none; /* Suppression du soulignement des liens */
+        margin: 10px; /* Espacements des boutons */
+        border-radius: 5px; /* Ajout d'arrondis pour les boutons */
+        font-family: 'OCR A';
+    }
+
+    a:hover,
+    a:focus {
+        background-color: #6d1500;
+        color: #ed2794;
+        border-color: #9f2407;
+        color: white;
+        transition: all 1s ease-out;
+    }
+
+    .menu {
+        background-color: black;
+        text-align: center;
+    }
+
+    .ml3 {
+        font-size: 3.5em;
+        color: white;
+        font-family: 'OCR A';
+        text-align: center;
+        opacity: 0.5;
+    }
+</style>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title> Welcome to Mars</title>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+
+
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+        targets: '.ml3 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 2250,
+        delay: (el, i) => 150 * (i+1)
+        }).add({
+        targets: '.ml3',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000000000
+        });
+
+
+
+
+    </script>
+
+</head>
+
+
+<body>
+    <h1 class="ml3"> Mon profil</h1>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="accueil.html">Accueil</a>
+            </li>
+            <li>
+                <a href="profil.html">Mon profil</a>
+            </li>
+            <li>
+                <a href="journal.html">Journal de bord</a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <div id="part1">
+
+        <nav>
+            <ul class="categorie">
+                <li>
+                    <a href="#part4">Identité</a>
+                </li>
+                <li>
+                    <a href="#part3">Compétence</a>
+                </li>
+                <li>
+                    <a href="#part2">Biographie</a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+        <div class="inside">
+
+
+            <div class="id">
+                <div class="container">
+                    <img src="img/matt.jpg" alt="My image" />
+                </div>
+                <p>
+                    NOM : DAMON
+                </p>
+
+                <p> PRENOM : MATT </p>
+                <p> AGE : 49  </p>
+                <p> ROLE : BIOLOGISTE  </p>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="part2">
+        <div class="inside">
+            <h2 class="ml3">Biographie</h2>
+            <p>
+                Matthew Paige Damon, dit Matt Damon (nom prononcé en anglais : [ˈdeɪmən]), est un acteur, scénariste et producteur de cinéma américain, né le 8 octobre 1970 à Cambridge (Massachusetts).
+
+                Il est révélé en incarnant les rôles-titres de Will Hunting (1997) et Il faut sauver le soldat Ryan (1998). Il est par la suite à l'affiche de la trilogie Ocean (Ocean's Eleven, Ocean's Twelve et Ocean's Thirteen) et de la série de films Jason Bourne (La Mémoire dans la peau, La Mort dans la peau, La Vengeance dans la peau et Jason Bourne). Damon apparaît également dans d'autres longs-métrages comme Syriana (2005), Les Infiltrés (2006), Invictus (2009), Interstellar (2014), Seul sur Mars (2015) et Manchester by the Sea (2016).
+
+            </p>
+
+        </div>
+    </div>
+
+    <div id="part3">
+        <div class="inside">
+            <h2 class="ml3">Compétences</h2>
+            <div class="id">
+
+                <p> ►  Endurance  ◄</p>
+
+                <div id="progressbar">
+                    <div></div>
+                </div>
+
+                <p> ►  Habilité   ◄</p>
+
+                <div id="progressbar2">
+                    <div></div>
+                </div>
+
+                <p> ►    Mental    ◄</p>
+
+                <div id="progressbar3">
+                    <div></div>
+                </div>
+
+                <p> ►     Force      ◄</p>
+
+                <div id="progressbar4">
+                    <div></div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+
+        <nav class="footer">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="about.html">Qui sommes-nous ?</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+
+
+</html>
