@@ -1,2 +1,4 @@
 # Web-Programming-Project
-SIte web project
+TEAM : 
+-> Florence Nguyen
+-> Abraham Ouedraogo
